@@ -1,0 +1,44 @@
+IPL Match Data Analysis
+
+Project Overview
+This project performs an Exploratory Data Analysis (EDA) on IPL match data to extract meaningful insights regarding team dominance, player performance, and match conditions. It utilizes popular Python data science libraries to visualize winning trends, toss impacts, and top-tier individual performances.
+
+Key Insights Explored
+Team Performance: Identifying which teams have secured the most wins.
+
+Toss Strategy: Analyzing whether teams prefer to bat or bowl first and how often the toss winner wins the match.
+
+Winning Margins: Visualizing the distribution of wins by runs versus wins by wickets.
+
+Player Excellence: Highlighting the top "Player of the Match" awardees and leading run-scorers.
+
+Bowling Analysis: Extracting and ranking the best bowling figures by total wickets taken.
+
+Venue Stats: Determining which stadiums host the most matches.
+
+Technical Stack
+Language: Python
+
+Data Manipulation: pandas, numpy
+
+Visualization: matplotlib, seaborn
+
+Environment: Jupyter Notebook / Google Colab
+
+Analysis Structure
+1. Data Cleaning & Preparation
+The script loads the IPL.csv dataset, checks for null values, and inspects the data schema using df.info(). It also includes custom preprocessing, such as splitting strings in the best_bowling_figure column to extract integer wicket counts for accurate aggregation.
+
+2. Visualizations
+The project generates several plots (saved as .png files), including:
+
+Bar Plots: For team wins, top scorers, and top bowlers.
+
+Count Plots: For toss decisions and winning methods (Runs vs. Wickets).
+
+Venue Analysis: A frequency distribution of matches played across different stadiums.
+
+3. Key Statistical Findings
+Toss Impact: Calculates the exact percentage of matches where the toss winner also won the game.
+
+Individual Records: Identifies the player with the highest individual score and the bowler with the best figures in a single match.
